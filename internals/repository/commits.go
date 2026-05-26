@@ -31,10 +31,15 @@ func Commit(msg string)(string,error){
 	}
 
 	err=UpdateCurrentCommit(commitHash);
-
+	
 	if(err!=nil){
 		return "",err;
 	}
+	err =UpdateHead(commitHash);
+	if(err!=nil){
+		return "",err;
+	}
+	
 
 	return commitHash,nil;
 

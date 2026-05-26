@@ -39,8 +39,8 @@ func Checkout(commitHash string)error{
 		return err;
 	}
 	
-
-	}
+}
+UpdateHead(commitHash);
 return nil;
 
 }
