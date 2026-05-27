@@ -7,6 +7,7 @@ import (
 
 
 type TreeEntry struct {
+	Type string
 	FileName string
 	Hash string
 
@@ -30,8 +31,9 @@ func ParserTreeObject(data[]byte)[]TreeEntry{
 		parts :=strings.Split(line," ");
 
 		entry :=TreeEntry{
-			FileName :parts[0],
-			Hash: parts[1],
+			Type: parts[0],
+			FileName :parts[1],
+			Hash: parts[2],
 		} 
 
 		entries =append(entries,entry);
