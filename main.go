@@ -82,17 +82,17 @@ func main() {
 			}
 
 		}
-	case "write-tree":
-		{
-			hash, err := repository.WriteTree()
-			if err != nil {
-				fmt.Println("error", err)
-				return
-			}
+	// case "write-tree":
+	// 	{
+	// 		hash, err := repository.WriteTree()
+	// 		if err != nil {
+	// 			fmt.Println("error", err)
+	// 			return
+	// 		}
 
-			fmt.Println(hash)
+	// 		fmt.Println(hash)
 
-		}
+	// 	}
 
 	case "commit":
 		{

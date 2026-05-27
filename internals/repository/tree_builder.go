@@ -3,7 +3,7 @@ package repository
 import (
 	"os"
 	"fmt"
-	"path/filePath"
+	"path/filepath"
 	"TimeScape/internals/hashing"
 	"TimeScape/internals/storage"
 	"TimeScape/internals/objects"

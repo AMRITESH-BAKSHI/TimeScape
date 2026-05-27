@@ -12,7 +12,7 @@ import (
 
 func Commit(msg string)(string,error){
 
-	treehash,err :=WriteTree();
+	treehash,err :=CreateTreeFromDirectory(".");
 
 	if(err!=nil){
 		return "",err

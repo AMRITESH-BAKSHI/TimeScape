@@ -2,27 +2,18 @@ package objects
 
 import (
 	"fmt"
-	"strings"
-	"TimeScape/internals/index"
+	
+	
 )
 
 
 
-func CreateTreeObject(entries []index.IndexEntry) []byte{
+func CreateTreeObject(content string) []byte{
 	
 	
-	var lines []string
-
-	for _,entry :=range entries{
-		line:=fmt.Sprintf( "%s %s",entry.FileName,entry.Hash);
-
-		lines=append(lines, line);
-	} 
-	treeContent :=strings.Join(lines,"\n");
-	
-	header := fmt.Sprintf("tree %d\x00",len(treeContent));
+	header := fmt.Sprintf("tree %d\x00",len(content));
 
 
-	return append([]byte(header),[]byte(treeContent)...);
+	return append([]byte(header),[]byte(content)...);
 
 }
