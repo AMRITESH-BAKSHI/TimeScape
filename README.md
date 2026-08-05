@@ -21,6 +21,16 @@ TimeScape was built as a systems engineering project to explore:
 Instead of treating Git as a black box, TimeScape rebuilds its core ideas from scratch in Go.
 
 ---
+# ⏳ TimeScape
+
+> A Git-inspired version control engine built from scratch in Go.
+
+## 🎥 Demo
+
+📺 Watch the complete project walkthrough:
+
+https://youtu.be/O26ys6P3A7k
+
 
 # Core Architecture
 
